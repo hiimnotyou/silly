@@ -1,0 +1,32 @@
+<!-- 404.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page</title>
+  <style>
+    body, iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      // Get the path from the original URL
+      var path = location.pathname;
+
+      // Create a new URL by combining the path with the base URL of the site you want to mirror
+      var url = 'https://8ydl58-3000.csb.app' + path;
+
+      // Set the iframe's src to the new URL
+      document.getElementById('iframe').src = url;
+    };
+  </script>
+</head>
+<body>
+  <iframe id="iframe"></iframe>
+</body>
+</html>
